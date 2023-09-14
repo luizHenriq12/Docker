@@ -1,0 +1,10 @@
+version: '3.9'
+
+services:
+      app:
+            image: unialfa-nginx
+            container_name: nginx-unialfa
+            volumes:
+                  - .:/usr/share/nginx/html/
+            ports:
+                  - 8081:80
