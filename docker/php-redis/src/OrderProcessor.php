@@ -10,10 +10,10 @@ class OrderProcessor {
         $this->queue = $queue;
     }
 
-        public function processOrder(array $order) {
-            $this->queue->enqueue(
-                'email_queue', 
-                json_encode($order)
-            );
-        }
+    public function processOrder(array $order) {
+        $this->queue->enqueue(
+            'email_queue', 
+            json_encode($order)
+        );
+    }
 }
